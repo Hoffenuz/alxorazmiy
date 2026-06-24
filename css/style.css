@@ -623,6 +623,33 @@ button, input, textarea {
   line-height: 1.65;
 }
 
+.location__map {
+  margin-top: 48px;
+  padding: 36px 32px;
+  text-align: center;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(242, 212, 186, 0.08);
+  border-radius: var(--radius-lg);
+}
+
+.location__map-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+
+.location__map-text {
+  max-width: 520px;
+  margin: 0 auto 24px;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.location__map-btn {
+  display: inline-flex;
+}
+
 .card--place {
   position: relative;
   overflow: hidden;
@@ -946,6 +973,38 @@ button, input, textarea {
 
 .contact__phone-btn span {
   letter-spacing: 0.5px;
+}
+
+.contact__address {
+  margin: 8px 0 28px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(242, 212, 186, 0.1);
+}
+
+.contact__address-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  margin-bottom: 12px;
+}
+
+.contact__address-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-gold);
+  border: 2px solid rgba(242, 212, 186, 0.25);
+  border-radius: 50px;
+  transition: all var(--transition);
+}
+
+.contact__address-link:hover {
+  border-color: var(--color-gold);
+  background: rgba(242, 212, 186, 0.06);
+  transform: translateY(-2px);
 }
 
 .contact__social {
