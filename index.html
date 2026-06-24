@@ -26,7 +26,7 @@
         <li><a href="#services" class="nav__link">Xizmatlar</a></li>
         <li><a href="#breakfast" class="nav__link">Nonushta</a></li>
         <li><a href="#gallery" class="nav__link">Galereya</a></li>
-        <li><a href="#contact" class="nav__link nav__link--cta">Aloqa</a></li>
+        <li><a href="tel:+998882086644" class="nav__link nav__link--cta">Qo'ng'iroq</a></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +42,7 @@
         <h1 class="hero__title">Al-Xorazmiy Hotel, Urganch</h1>
         <p class="hero__text">Urganch shahrining qalbida joylashgan, barcha qulayliklarga ega va aeroportga yaqin "Al-Xorazmiy Hotel" sizni kutmoqda. Bu yerda sharqona mehmondo'stlik zamonaviy qulayliklar bilan uyg'unlashgan.</p>
         <div class="hero__actions">
-          <a href="#contact" class="btn btn--primary">Band qilish</a>
+          <a href="tel:+998882086644" class="btn btn--primary">+998 88 208 66 44</a>
           <a href="#rooms" class="btn btn--outline">Xonalarni ko'rish</a>
         </div>
       </div>
@@ -82,8 +82,12 @@
           <a href="#gallery" class="link-arrow">Galereyani ko'rish →</a>
         </div>
         <div class="about__images">
-          <img src="images/image10.png" alt="Mehmonxona lobbi" class="about__img about__img--main">
-          <img src="images/image12.png" alt="Restoran zali" class="about__img about__img--secondary">
+          <button type="button" class="about__img-btn about__img-btn--main" data-lightbox="images/image10.png" data-caption="Mehmonxona lobbi">
+            <img src="images/image10.png" alt="Mehmonxona lobbi" class="about__img about__img--main">
+          </button>
+          <button type="button" class="about__img-btn" data-lightbox="images/image12.png" data-caption="Restoran zali">
+            <img src="images/image12.png" alt="Restoran zali" class="about__img about__img--secondary">
+          </button>
         </div>
       </div>
     </section>
@@ -128,9 +132,10 @@
         </div>
         <div class="rooms">
           <div class="rooms__gallery">
-            <div class="rooms__main">
+            <button type="button" class="rooms__main" id="roomMainBtn" data-lightbox="images/image7.png" data-caption="Standart xona">
               <img src="images/image7.png" alt="Standart xona" id="roomMainImg">
-            </div>
+              <span class="rooms__zoom" aria-hidden="true">Kattalashtirish</span>
+            </button>
             <div class="rooms__thumbs">
               <button class="rooms__thumb active" data-src="images/image7.png" aria-label="Standart xona">
                 <img src="images/image7.png" alt="">
@@ -159,7 +164,7 @@
               <span class="amenity">Wi-Fi</span>
               <span class="amenity">Choy stansiyasi</span>
             </div>
-            <a href="#contact" class="btn btn--primary">Xona band qilish</a>
+            <a href="tel:+998882086644" class="btn btn--primary">+998 88 208 66 44</a>
           </div>
         </div>
       </div>
@@ -173,9 +178,9 @@
           <p class="section__desc">Mehmonxona interyerida boy milliy naqshlar va zamonaviy dizayn elementlari mahorat bilan uyg'unlashgan. Har bir burchakda o'ziga xos sharqona muhitni his etasiz.</p>
         </div>
         <div class="design__grid">
-          <img src="images/image10.png" alt="Lobbi" class="design__img">
-          <img src="images/image12.png" alt="Restoran" class="design__img design__img--tall">
-          <img src="images/image17.png" alt="Nonushta zali" class="design__img">
+          <button type="button" class="design__img-btn" data-lightbox="images/image10.png" data-caption="Lobbi"><img src="images/image10.png" alt="Lobbi" class="design__img"></button>
+          <button type="button" class="design__img-btn" data-lightbox="images/image12.png" data-caption="Restoran"><img src="images/image12.png" alt="Restoran" class="design__img design__img--tall"></button>
+          <button type="button" class="design__img-btn" data-lightbox="images/image17.png" data-caption="Nonushta zali"><img src="images/image17.png" alt="Nonushta zali" class="design__img"></button>
         </div>
       </div>
     </section>
@@ -235,10 +240,10 @@
           <p class="section__desc">Mazali taomlar va ichimliklar barchasini o'z ichiga olgan nonushtamizdan bahramand bo'lishingiz mumkin. Al-Xorazmiy Hotel dam olish va farovonlik uchun keng imkoniyatlar taqdim etadi.</p>
         </div>
         <div class="breakfast__grid">
-          <img src="images/image19.jpg" alt="Nonushta stoli" class="breakfast__img breakfast__img--large">
-          <img src="images/image20.jpg" alt="Nonushta bufeti" class="breakfast__img">
-          <img src="images/image17.png" alt="Nonushta zali" class="breakfast__img">
-          <img src="images/image18.png" alt="Nonushta taomlari" class="breakfast__img">
+          <button type="button" class="breakfast__img-btn breakfast__img-btn--large" data-lightbox="images/image19.jpg" data-caption="Nonushta stoli"><img src="images/image19.jpg" alt="Nonushta stoli" class="breakfast__img breakfast__img--large"></button>
+          <button type="button" class="breakfast__img-btn" data-lightbox="images/image20.jpg" data-caption="Nonushta bufeti"><img src="images/image20.jpg" alt="Nonushta bufeti" class="breakfast__img"></button>
+          <button type="button" class="breakfast__img-btn" data-lightbox="images/image17.png" data-caption="Nonushta zali"><img src="images/image17.png" alt="Nonushta zali" class="breakfast__img"></button>
+          <button type="button" class="breakfast__img-btn" data-lightbox="images/image18.png" data-caption="Nonushta taomlari"><img src="images/image18.png" alt="Nonushta taomlari" class="breakfast__img"></button>
         </div>
       </div>
     </section>
@@ -275,81 +280,51 @@
           <span class="section__tag">Galereya</span>
           <h2 class="section__title">Mehmonxonamizdan lavhalar</h2>
         </div>
+        <p class="gallery__hint">Rasmni kattalashtirish uchun ustiga bosing</p>
         <div class="gallery" id="galleryGrid">
-          <button class="gallery__item"><img src="images/image2.png" alt="Mehmonxona tashqi ko'rinishi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image7.png" alt="Standart xona" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image8.png" alt="Xona qulayliklari" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image9.png" alt="Hammom" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image10.png" alt="Lobbi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image11.png" alt="Deluxe xona" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image12.png" alt="Restoran zali" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image17.png" alt="Nonushta bufeti" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image18.png" alt="Nonushta taomlari" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image19.jpg" alt="Nonushta stoli" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image20.jpg" alt="Nonushta zali" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image21.png" alt="Al-Xorazmiy Hotel logotipi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image4.png" alt="Aeroport ikonkasi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image5.png" alt="Shahar markazi ikonkasi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image6.png" alt="Imkoniyatlar ikonkasi" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image13.png" alt="Do'stona muhit" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image14.png" alt="24 soat xizmat" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image15.png" alt="Bepul transfer" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image16.png" alt="Qo'shimcha xizmatlar" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image22.png" alt="Instagram" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image23.png" alt="Telegram" loading="lazy"></button>
-          <button class="gallery__item"><img src="images/image24.jpg" alt="Telefon" loading="lazy"></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image2.png" data-caption="Mehmonxona tashqi ko'rinishi"><img src="images/image2.png" alt="Mehmonxona tashqi ko'rinishi" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image7.png" data-caption="Standart xona"><img src="images/image7.png" alt="Standart xona" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image8.png" data-caption="Xona qulayliklari"><img src="images/image8.png" alt="Xona qulayliklari" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image9.png" data-caption="Hammom"><img src="images/image9.png" alt="Hammom" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image10.png" data-caption="Lobbi"><img src="images/image10.png" alt="Lobbi" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image11.png" data-caption="Deluxe xona"><img src="images/image11.png" alt="Deluxe xona" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image12.png" data-caption="Restoran zali"><img src="images/image12.png" alt="Restoran zali" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image17.png" data-caption="Nonushta bufeti"><img src="images/image17.png" alt="Nonushta bufeti" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image18.png" data-caption="Nonushta taomlari"><img src="images/image18.png" alt="Nonushta taomlari" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image19.jpg" data-caption="Nonushta stoli"><img src="images/image19.jpg" alt="Nonushta stoli" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
+          <button type="button" class="gallery__item" data-lightbox="images/image20.jpg" data-caption="Nonushta zali"><img src="images/image20.jpg" alt="Nonushta zali" loading="lazy"><span class="gallery__zoom" aria-hidden="true">+</span></button>
         </div>
       </div>
     </section>
 
     <section class="section section--contact" id="contact">
-      <div class="container contact">
-        <div class="contact__info">
-          <img src="images/image21.png" alt="Al-Xorazmiy Hotel" class="contact__logo" width="220">
-          <h2 class="section__title">Biz bilan bog'laning</h2>
-          <p class="section__desc">Xona band qilish yoki qo'shimcha ma'lumot olish uchun bizga murojaat qiling.</p>
-          <div class="contact__phones">
-            <a href="tel:+998882086644" class="contact__phone">
-              <img src="images/image24.jpg" alt="" width="24" height="24" class="contact__phone-icon">
-              +998 88 208 66 44
-            </a>
-            <a href="tel:+998556036644" class="contact__phone">
-              <img src="images/image24.jpg" alt="" width="24" height="24" class="contact__phone-icon">
-              +998 55 603 66 44
-            </a>
-          </div>
-          <div class="contact__social">
-            <a href="https://instagram.com/al_xorazmiy_hotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
-              <img src="images/image22.png" alt="Instagram" width="28" height="28">
-              @al_xorazmiy_hotel
-            </a>
-            <a href="https://instagram.com/Al_XorazmiyHotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
-              <img src="images/image22.png" alt="Instagram" width="28" height="28">
-              @Al_XorazmiyHotel
-            </a>
-            <a href="https://t.me/al_xorazmiy_hotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
-              <img src="images/image23.png" alt="Telegram" width="28" height="28">
-              Telegram
-            </a>
-          </div>
+      <div class="container contact contact--centered">
+        <img src="images/image21.png" alt="Al-Xorazmiy Hotel" class="contact__logo" width="220">
+        <h2 class="section__title">Biz bilan bog'laning</h2>
+        <p class="section__desc">Xona band qilish faqat telefon orqali amalga oshiriladi. Quyidagi raqamlarga qo'ng'iroq qiling.</p>
+        <div class="contact__phones contact__phones--large">
+          <a href="tel:+998882086644" class="contact__phone-btn">
+            <img src="images/image24.jpg" alt="" width="32" height="32" class="contact__phone-icon">
+            <span>+998 88 208 66 44</span>
+          </a>
+          <a href="tel:+998556036644" class="contact__phone-btn">
+            <img src="images/image24.jpg" alt="" width="32" height="32" class="contact__phone-icon">
+            <span>+998 55 603 66 44</span>
+          </a>
         </div>
-        <div class="contact__form-wrap">
-          <form class="contact__form" id="contactForm">
-            <h3 class="contact__form-title">Xabar yuborish</h3>
-            <div class="form__group">
-              <label for="name">Ismingiz</label>
-              <input type="text" id="name" name="name" required placeholder="Ism va familiya">
-            </div>
-            <div class="form__group">
-              <label for="phone">Telefon</label>
-              <input type="tel" id="phone" name="phone" required placeholder="+998 XX XXX XX XX">
-            </div>
-            <div class="form__group">
-              <label for="message">Xabar</label>
-              <textarea id="message" name="message" rows="4" placeholder="Xona band qilish yoki savolingiz..."></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--full">Yuborish</button>
-          </form>
+        <div class="contact__social">
+          <a href="https://instagram.com/al_xorazmiy_hotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+            <img src="images/image22.png" alt="Instagram" width="28" height="28">
+            @al_xorazmiy_hotel
+          </a>
+          <a href="https://instagram.com/Al_XorazmiyHotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+            <img src="images/image22.png" alt="Instagram" width="28" height="28">
+            @Al_XorazmiyHotel
+          </a>
+          <a href="https://t.me/al_xorazmiy_hotel" target="_blank" rel="noopener noreferrer" class="contact__social-link">
+            <img src="images/image23.png" alt="Telegram" width="28" height="28">
+            Telegram
+          </a>
         </div>
       </div>
     </section>
@@ -367,11 +342,17 @@
     </div>
   </footer>
 
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Yopish">&times;</button>
-    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Oldingi">&#8249;</button>
-    <img src="" alt="" class="lightbox__img" id="lightboxImg">
-    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Keyingi">&#8250;</button>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__dialog">
+      <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Yopish">&times;</button>
+      <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Oldingi">&#8249;</button>
+      <figure class="lightbox__figure">
+        <img src="" alt="" class="lightbox__img" id="lightboxImg">
+        <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+      </figure>
+      <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Keyingi">&#8250;</button>
+    </div>
   </div>
 
   <script src="js/main.js"></script>
